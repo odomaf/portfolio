@@ -1,16 +1,82 @@
 /* Restore palette row and swatch layout */
 .palette-row {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
 }
 
 .palette-swatch {
-	width: 64px;
-	height: 64px;
-	border-radius: 8px;
-	border: 2px solid #eee;
-	margin-bottom: 8px;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  border: 2px solid #eee;
+  margin-bottom: 8px;
 }
 
+/* Restore palette table layout */
+.palette-table {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.palette-table-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+  justify-content: flex-start;
+  outline: none;
+  background: none;
+}
+
+.palette-table-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 180px;
+  outline: none;
+  background: none;
+  box-sizing: border-box;
+  padding: 0 12px 0 0;
+}
+
+.palette-table-info,
+.palette-table-swatch,
+.palette-table-sample {
+  width: 180px;
+  min-width: 0;
+  align-items: flex-start;
+}
+
+/* Palette sample elements */
+.palette-sample-heading1 {
+  color: var(--palette-1);
+  margin: 0;
+}
+.palette-sample-heading2 {
+  color: var(--palette-2);
+  margin: 0;
+}
+.palette-sample-heading3 {
+  color: var(--palette-3);
+  margin: 0;
+}
+.palette-sample-heading4 {
+  color: var(--palette-4);
+  margin: 0;
+}
+.palette-sample-heading5 {
+  color: var(--palette-5);
+  margin: 0;
+  font-weight: 700;
+}
+.palette-sample-default-text {
+  color: var(--palette-6);
+  font-size: 16px;
+}
