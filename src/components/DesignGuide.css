@@ -1,3 +1,11 @@
+/* Hero Section demo for DesignGuide */
+.designguide-hero-demo {
+  width: 75%;
+  margin: 2.5rem auto 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 1.5rem;
+}
 /* Restore palette row and swatch layout */
 .palette-row {
   display: flex;

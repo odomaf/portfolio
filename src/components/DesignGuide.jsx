@@ -92,33 +92,35 @@ export default function DesignGuide() {
 
       {/* Hero Section Sample */}
       <section className="hero-section mt-12">
-        <h1 className="on-dark-bg">Welcome to My Portfolio</h1>
-        <p>
-          Showcasing my work and skills with an accessible, vibrant palette.
-          <br />
-          <a
-            href="https://github.com/odomaf/portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="header-footer-bg designguide-hero-demo">
+          <h1 className="on-dark-bg">Welcome to My Portfolio</h1>
+          <p>
+            Showcasing my work and skills with an accessible, vibrant palette.
+            <br />
+            <a
+              href="https://github.com/odomaf/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source on GitHub
+            </a>
+          </p>
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+              justifyContent: "center",
+              alignItems: "center",
+              maxWidth: 700,
+              margin: "0 auto 1.5rem auto",
+            }}
           >
-            View source on GitHub
-          </a>
-        </p>
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            justifyContent: "center",
-            alignItems: "center",
-            maxWidth: 700,
-            margin: "0 auto 1.5rem auto",
-          }}
-        >
-          <button className="button-primary">Primary Button</button>
-          <button className="button-secondary">Secondary Button</button>
-          <button className="button-cancel">Close</button>
-          <div className="badge">
-            <strong>Badge</strong>
+            <button className="button-primary">Primary Button</button>
+            <button className="button-secondary">Secondary Button</button>
+            <button className="button-cancel">Close</button>
+            <div className="badge">
+              <strong>Badge</strong>
+            </div>
           </div>
         </div>
       </section>
