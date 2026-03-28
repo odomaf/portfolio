@@ -132,9 +132,9 @@ code {
   background: var(--code-bg);
 }
 
-/* Global link color using palette-5 (magenta) */
+/* Global link color using palette-3 (teal) */
 a {
-  color: var(--palette-5);
+  color: var(--palette-3);
   text-decoration: underline;
   transition: color 0.2s;
 }
@@ -145,7 +145,7 @@ a:focus {
 
 /* Global secondary button class */
 .button-secondary {
-  background: var(--palette-3);
+  background: var(--palette-2);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -156,12 +156,29 @@ a:focus {
 }
 .button-secondary:hover,
 .button-secondary:focus {
+  background: var(--palette-3); /* Teal on hover/focus */
+}
+
+/* Global primary button class */
+.button-primary {
+  background: var(--palette-4);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.button-primary:hover,
+.button-primary:focus {
   background: var(--palette-2); /* Indigo on hover/focus */
 }
 
 /* Global badge class */
 .badge {
-  background: var(--palette-4);
+  background: var(--palette-5); /* Magenta */
   color: #fff;
   border-radius: 4px;
   padding: 0.25em 0.75em;
@@ -176,4 +193,39 @@ a:focus {
   font-size: 1.25rem;
   margin: 8px 0 4px 0;
   display: inline-block;
+}
+
+/* Header/Footer background class */
+.header-footer-bg {
+  background: var(--palette-1);
+  color: #fff;
+}
+
+/* White text on dark backgrounds (e.g., palette-1) */
+.on-dark-bg {
+  color: #fff !important;
+}
+
+/* Global cancel/close button class */
+.button-cancel {
+  background: var(--palette-6); /* Slate */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.button-cancel:hover,
+.button-cancel:focus {
+  background: var(--palette-1); /* Deep Purple on hover/focus */
+}
+
+button,
+.button-primary,
+.button-secondary,
+.button-cancel {
+  font-weight: 700;
 }

@@ -28,17 +28,29 @@
 .palette-table-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-start; /* Ensure all columns align at the top */
   gap: 0;
   justify-content: flex-start;
   outline: none;
   background: none;
+  border-bottom: 1px solid var(--palette-6); /* Slate dividing line */
+}
+
+.palette-table-row:last-child {
+  border-bottom: none;
+}
+
+/* Add bottom padding to column 3 in rows 1 and 2 (palette-1 and palette-2) */
+.palette-table-row:nth-child(1) .palette-table-sample,
+.palette-table-row:nth-child(2) .palette-table-sample {
+  padding-bottom: 8px;
 }
 
 .palette-table-col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start; /* Align content to the top */
   width: 180px;
   outline: none;
   background: none;
@@ -79,4 +91,14 @@
 .palette-sample-default-text {
   color: var(--palette-6);
   font-size: 16px;
+}
+
+/* Palette sample elements in palette-table-sample */
+.palette-table-sample h1,
+.palette-table-sample h2,
+.palette-table-sample h3,
+.palette-table-sample h4,
+.palette-table-sample h5,
+.palette-table-sample h6 {
+  margin: 0;
 }

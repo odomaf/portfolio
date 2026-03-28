@@ -34,7 +34,7 @@ export default function DesignGuide() {
                 {c.var === "--palette-1" && (
                   <>
                     <h1>Heading 1</h1>
-                    <div className="palette-sample-header-bg">
+                    <div className="header-footer-bg p-2 rounded">
                       Header/Footer Background
                     </div>
                   </>
@@ -43,20 +43,23 @@ export default function DesignGuide() {
                   <>
                     <h2>Heading 2</h2>
                     <span className="section-title">Section Title</span>
-                  </>
-                )}
-                {c.var === "--palette-3" && (
-                  <>
-                    <h3>Heading 3</h3>
                     <button className="button-secondary">
                       Secondary Button
                     </button>
                   </>
                 )}
+                {c.var === "--palette-3" && (
+                  <>
+                    <h3>Heading 3</h3>
+                    <a href="#">Link</a>
+                  </>
+                )}
                 {c.var === "--palette-4" && (
                   <>
                     <h4>Heading 4</h4>
-                    <span className="badge">Badge</span>
+                    <button className="button-primary mt-2">
+                      Primary Button
+                    </button>
                   </>
                 )}
                 {c.var === "--palette-5" && (
@@ -70,7 +73,7 @@ export default function DesignGuide() {
                     >
                       Heading 5
                     </h5>
-                    <a href="#">Link</a>
+                    <span className="badge">Badge</span>
                   </>
                 )}
                 {c.var === "--palette-6" && (
@@ -78,9 +81,7 @@ export default function DesignGuide() {
                     <span className="palette-sample-default-text">
                       Default Text
                     </span>
-                    <p className="palette-sample-default-p">
-                      This is a sample of default text color.
-                    </p>
+                    <button className="button-cancel mt-2">Close</button>
                   </>
                 )}
               </div>
@@ -89,14 +90,36 @@ export default function DesignGuide() {
         </div>
       </section>
 
-      {/* Container example: shows a styled content box for layout reference */}
-      <section id="container-example-section">
-        <h2>Container Example</h2>
-        <div className="bg-white border border-[#e5e4e7] rounded-lg p-6 max-w-xl mx-auto shadow-sm">
-          <p>
-            This is a sample container. Adjust padding, border, and background
-            to experiment with layout.
-          </p>
+      {/* Hero Section Sample */}
+      <section className="hero-section mt-12">
+        <h1 className="on-dark-bg">Welcome to My Portfolio</h1>
+        <p>
+          Showcasing my work and skills with an accessible, vibrant palette.
+          <br />
+          <a
+            href="https://github.com/odomaf/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View source on GitHub
+          </a>
+        </p>
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            alignItems: "center",
+            maxWidth: 700,
+            margin: "0 auto 1.5rem auto",
+          }}
+        >
+          <button className="button-primary">Primary Button</button>
+          <button className="button-secondary">Secondary Button</button>
+          <button className="button-cancel">Close</button>
+          <div className="badge">
+            <strong>Badge</strong>
+          </div>
         </div>
       </section>
     </div>

@@ -7,7 +7,7 @@ const palette = [
   { name: "Teal", var: "--palette-3", hex: "#14b8a6" },
   { name: "Lime", var: "--palette-4", hex: "#65a30d" }, // Deeper lime for legibility
   { name: "Magenta", var: "--palette-5", hex: "#ff1fae" },
-  { name: "Default Text", var: "--palette-6", hex: "#6b6375" }, // Default text color
+  { name: "Slate", var: "--palette-6", hex: "#6b6375" }, // Default text color
 ];
 
 export default palette;

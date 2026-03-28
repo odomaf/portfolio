@@ -1,5 +1,4 @@
 import { useState } from "react";
-import HeroSection from "./components/HeroSection";
 import DesignGuide from "./components/DesignGuide";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
