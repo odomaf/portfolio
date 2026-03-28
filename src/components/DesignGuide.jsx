@@ -1,4 +1,5 @@
-import React from "react";
+
+import "./DesignGuide.css";
 
 const palette = [
   { name: "Deep Purple", var: "--palette-1", hex: "#2d033b" },
@@ -10,32 +11,26 @@ const palette = [
 
 export default function DesignGuide() {
   return (
-    <div style={{ padding: 32 }}>
+    <div className="p-8">
       <h1>Design Guide</h1>
-      <section style={{ marginBottom: 32 }}>
+      <section className="mb-8">
         <h2>Color Palette</h2>
-        <div style={{ display: "flex", gap: 24 }}>
+        <div className="palette-row">
           {palette.map((c) => (
-            <div key={c.var} style={{ textAlign: "center" }}>
+            <div key={c.var} className="text-center">
               <div
-                style={{
-                  width: 64,
-                  height: 64,
-                  borderRadius: 8,
-                  background: `var(${c.var}, ${c.hex})`,
-                  border: "2px solid #eee",
-                  marginBottom: 8,
-                }}
+                className="palette-swatch"
+                style={{ background: c.hex }}
                 title={c.hex}
               />
-              <div style={{ fontSize: 14 }}>{c.name}</div>
-              <div style={{ fontSize: 12, color: "#888" }}>{c.hex}</div>
-              <div style={{ fontSize: 12, color: "#888" }}>{c.var}</div>
+              <div className="text-sm">{c.name}</div>
+              <div className="text-xs text-gray-500">{c.hex}</div>
+              <div className="text-xs text-gray-500">{c.var}</div>
             </div>
           ))}
         </div>
       </section>
-      <section style={{ marginBottom: 32 }}>
+      <section className="mb-8">
         <h2>Headings</h2>
         <h1>Heading 1 (h1)</h1>
         <h2>Heading 2 (h2)</h2>
@@ -45,17 +40,7 @@ export default function DesignGuide() {
       </section>
       <section>
         <h2>Container Example</h2>
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #e5e4e7",
-            borderRadius: 8,
-            padding: 24,
-            maxWidth: 600,
-            margin: "0 auto",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-          }}
-        >
+        <div className="bg-white border border-[#e5e4e7] rounded-lg p-6 max-w-xl mx-auto shadow-sm">
           <p>
             This is a sample container. Adjust padding, border, and background
             to experiment with layout.

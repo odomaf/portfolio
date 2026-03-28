@@ -1,0 +1,16 @@
+/* Restore palette row and swatch layout */
+.palette-row {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	justify-content: center;
+}
+
+.palette-swatch {
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
+	border: 2px solid #eee;
+	margin-bottom: 8px;
+}
+
