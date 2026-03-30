@@ -1,3 +1,4 @@
+console.log("Loaded tailwind.config.js");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   safelist: [
@@ -16,12 +17,4 @@ module.exports = {
     "border-green-400",
     "flex-1",
   ],
-  darkMode: "class",
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 };
