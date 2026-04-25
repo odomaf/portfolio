@@ -5,9 +5,18 @@ export default function Home() {
     <div>
       <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
       <p className="text-lg text-gray-700">
-        Hi! I'm a passionate developer with experience in building web applications using React, Node.js, and other modern technologies. This portfolio showcases some of my projects and design work. Feel free to explore and check out my design guide for insights into my design process and principles.
+        Hi! I'm a passionate developer with experience in building web
+        applications using React, Node.js, and other modern technologies. This
+        portfolio showcases some of my projects and design work. Feel free to
+        explore and check out my design guide for insights into my design
+        process and principles.
       </p>
+      <a
+        href="/design-guide"
+        className="mt-4 inline-block text-teal-600 hover:underline"
+      >
+        View Design Guide →
+      </a>
     </div>
   );
 }
-
