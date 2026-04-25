@@ -27,5 +27,4 @@ dist-ssr
 *.sw?
 
 # Local deployment notes (do not commit)
-docs/ops/CI_CD_SETUP_NOTES.txt
-docs/ops/portfolio-self-hosted-runner-checkpoint.md
+docs/ops/
